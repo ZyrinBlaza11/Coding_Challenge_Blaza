@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Coding Challenge 4
+        </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            body {
+                background-color: lightseagreen;
+            }
+        </style>
+    </head>
+    <body>
+        <h1> Replace All </h1>
+
+        <p id="para">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+        <button onclick="cchange()">Replace</button>
+        <p id="parap"></p>
+
+        <script>
+            function cchange() {
+                let para = document.getElementById("para");
+                let parap = document.getElementById("parap");
+                let text = para.innerText;
+                text = text.replace(/lorem/gi, "wow");
+                text = text.replace(/ipsum/gi, "i");
+                text = text.replace(/dolor/gi, "love");
+				text = text.replace(/sit/gi, "ko");
+				text = text.replace(/ullamco/gi, "ako");
+				text = text.replace(/laboris/gi, "nalang");
+				text = text.replace(/nisi/gi, "please");
+				text = text.replace(/duis/gi, "non-chalant");
+				text = text.replace(/acrushe/gi, "oa");
+				text = text.replace(/irure/gi, "jabilee");
+				text = text.replace(/raprehenderit/gi, "shet");
+				text = text.replace(/volupate/gi, "yiee");
+				text = text.replace(/esse/gi, "wews");
+				text = text.replace(/cillum/gi, "word");
+				text = text.replace(/eu/gi, "sana");
+				text = text.replace(/fugiat/gi, "wish");
+				text = text.replace(/nulla/gi, "kow");
+				text = text.replace(/pariatur/gi, "lang");
+                text = text.replace(/amet/gi, "waw");
+                text = text.replace(/consectetur/gi, "cs");
+                text = text.replace(/adipiscing/gi, "ril");
+                text = text.replace(/elit/gi, "mkns");
+                text = text.replace(/sed/gi, "sana all");
+                text = text.replace(/do/gi, "huie");
+                text = text.replace(/eiusmod/gi, "what");
+                text = text.replace(/tempor/gi, "if");
+                text = text.replace(/incididunt/gi, "sana");
+                text = text.replace(/ut/gi, "crush");
+                text = text.replace(/labore/gi, "ka");
+                text = text.replace(/et/gi, "ng");
+                text = text.replace(/dolore/gi, "crush");
+                text = text.replace(/magna/gi, "mo");
+                text = text.replace(/aliqua/gi, "shiiish");
+                text = text.replace(/enim/gi, "ano pa na word");
+                text = text.replace(/minim/gi, "uhmm");
+                text = text.replace(/veniam/gi, "yes");
+                text = text.replace(/quis/gi, "no");
+                text = text.replace(/nostrud/gi, "yipeeee");
+                text = text.replace(/exercitation/gi, "sanaol");
+				text = text.replace(/Excepteur/gi, "kapooya");
+				text = text.replace(/sint/gi, "pud");
+				text = text.replace(/occaecat/gi, "ani");
+				text = text.replace(/cupidatat/gi, "oi");
+				text = text.replace(/non/gi, "hahaha");
+				text = text.replace(/proident/gi, "shocks");
+				text = text.replace(/sunt/gi, "istatistiks");
+				text = text.replace(/in/gi, "istitik");
+				text = text.replace(/qui/gi, "bruno");
+				text = text.replace(/officia/gi, "mars");
+				text = text.replace(/deserunt/gi, "bohemian");
+				text = text.replace(/mollit/gi, "excited");
+				text = text.replace(/anim/gi, "na");
+				text = text.replace(/id/gi, "ako");
+				text = text.replace(/est/gi, "sa");
+				text = text.replace(/laborum/gi, "botb");
+                parap.innerText = text;
+            }
+        </script>
+    </body>
+</html>

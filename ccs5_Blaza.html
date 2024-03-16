@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Coding Challenge 5
+        </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            body {
+                background-color: lightseagreen;
+            }
+        </style>
+    </head>
+    <body>
+        <h1> Modified FLAMES </h1>
+
+        <input type="text" id="nameA" placeholder="Enter Name A">
+        <input type="text" id="nameB" placeholder="Enter Name B">
+        <button onclick="flames()">Match Names</button>
+        <h3 id="name"></h3>
+
+        <h4>FLAMES Result:</h4>
+        <h3 id="result"></h3>
+
+        <script>
+            function flames() {
+                const nameA = document.getElementById("nameA").value.toLowerCase().replace(/\s/g, '');
+                const nameB = document.getElementById("nameB").value.toLowerCase().replace(/\s/g, '');
+
+                const lenA = nameA.length;
+                const lenB = nameB.length;
+
+                const sum = lenA + lenB;
+                const diff = Math.abs(lenA - lenB);
+                const product = lenA * lenB;
+
+                let flamesResult = "";
+
+                switch (sum % 6) {
+                    case 0:
+                        flamesResult = "F-friends";
+                        break;
+                    case 1:
+                        flamesResult = "L-lovers";
+                        break;
+                    case 2:
+                        flamesResult = "A-Aquaintances";
+                        break;
+                    case 3:
+                        flamesResult = "M-Marriage";
+                        break;
+                    case 4:
+                        flamesResult = "E-Enemys";
+                        break;
+                    case 5:flamesResult = "S-Sweethearts";
+                        break;
+                }
+
+                document.getElementById("name").innerHTML = `Names: ${nameA} and ${nameB}`;
+                document.getElementById("result").innerHTML = flamesResult;
+            }
+        </script>
+    </body>
+</html>
